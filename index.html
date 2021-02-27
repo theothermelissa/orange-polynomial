@@ -8,17 +8,25 @@
     <meta name="description" content="Fundraiser Central for Orange Polynomial Band">
     <meta name="author" content="Selljar">
 
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css" />
     <link rel="stylesheet" href="css/styles.css">
+<script async src="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js"></script>
+
 </head>
 <body>
+    <div id="snipcart" data-config-modal-style="side" data-api-key="MjFlMjU3ZDItNTk3ZC00YWY4LTkxZjYtM2IzMTFjNDI4Nzk2NjM3NDk5NzQ0NjkxNjkyMDcw" hidden></div>
+    <div hidden id="snipcart" data-api-key="MjFlMjU3ZDItNTk3ZC00YWY4LTkxZjYtM2IzMTFjNDI4Nzk2NjM3NDk5NzQ0NjkxNjkyMDcw"></div>
     <div id="navbar">
         <nav>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a href="#hero">Home</a>
                 </li>
                 <li>
                     <a href="#shop">Shop</a>
+                </li>
+                <li>
+                    <a href="#volunteer">Volunteer</a>
                 </li>
                 <li>
                     <a href="#donate">Donate</a>
@@ -41,21 +49,29 @@
                 <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                 <div class="CTAcontainer">
                     <h1 class="title">6 Ways To Support Orange Polynomial Band</h1>
-                    <a class="button">FIND OUT HOW</a>
+                    <a class="button" type="button" href="#shop">FIND OUT HOW</a>
                 </div>
             </div>
         </section>
         <section id="shop">
             <div class=sectionContainer>
-                <h1 class="sectionTitle">Method #1: Shop Our Firehouse Barbecue Fundraiser!</h1>
+                <h1 class="sectionTitle">Help by: Shopping Our Firehouse Barbecue Fundraiser</h1>
                 <p class="sectionDescription">We've partnered with Firehouse Barbecue to offer these delicious smoked meats, sauces, and Butcher's Crates at a great price. Every purchase contributes directly to Orange Polynomial's goals. </p>
                 <div id="productList">
                     <ul>
                         <li class="product">
                             <img class="productMainImage" src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
-                            <h1 class="productName">Product 1!</h1>
-                            <p class="productDescription">This is a description of the cool things about this product.</p>
-                            <button class="buyButton" type="button">Add to Cart</button>
+                            <h1 class="productName">Boston Butt</h1>
+                            <p class="productDescription">Delicious Boston Butts smoked to perfection. Our Boston Butts are premium quality, locally sourced, and slowly hickory smoked over 16 hours until they reach exquisite fork-tenderness. </p>
+                            <button class="buyButton snipcart-add-item"
+                                type="button"
+                                data-item-id="hotbostonbutt"
+                                data-item-price="$59.99"
+                                data-item-url="https://theothermelissa.github.io/orange-polynomial/"
+                                data-item-description="Delicious Boston Butts smoked to perfection. Our Boston Butts are premium quality, locally sourced, and slowly hickory smoked over 16 hours until they reach exquisite fork-tenderness. "
+                                data-item-image="/images/tinifiedButtsInTheSmoker.jpg"
+                                data-item-name="Boston Butt"
+                                >Add to Cart</button>
                         </li>
                         <li class="product">
                             <img class="productMainImage" src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
@@ -97,16 +113,45 @@
                 </div>
             </div>
         </section>
-        <section id="donate">
+        <section id="pickup">
             <div class="sectionContainer">
-                <h1 class="sectionTitle">Method #2: Donate!</h1>
-                <p class="sectionDescription">Want to contribute without buying any barbecue? Fantastic! 100% of donations go directly to Orange Polynomial Band.</p>
-                <button type="button" class="button">Make a Donation</button>
+                <div class="subsectionContainer">
+                    <h1 class="sectionTitle">IMPORTANT: Don't miss the pickup date!</h1>
+                    <h2 class="sectionDescription">WHERE:</h2>
+                    <h3 class="sectionDescription">Orange Polynomial High School Auditorium<br>123 Anywhere St.<br>Polynomial, AL 35962</h3>
+                    <h2 class="sectionDescription">WHEN: 2:00 - 4:00 P.M.</h2>
+                    <button type="button" class="button">Add to Calendar</button>
+                </div>
+                <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
+            </div>
+        </section>
+        <section>
+            <div class="sideBySide">
+                <div class="subsectionContainer brightBackground" id="share">
+                    <h1 class="sectionTitle">Help by: Sharing far and wide</h1>
+                    <p class="sectionDescription">Sharing this page helps us meet our goals by reaching people that we can't who might be able to contribute toward our mission. Every share helps!</p>
+                    <button class="button" type="button">Share</button>
+                </div>
+                <div class="subsectionContainer mediumGrayBackground" id="donate">
+                    <h1 class="sectionTitle">Help by: Making a donation</h1>
+                    <p class="sectionDescription">Want to contribute without buying any barbecue? Fantastic! 100% of donations go directly to Orange Polynomial Band.</p>
+                    <button type="button" class="button">Make a Donation</button>
+                </div>
+            </div>
+        </section>
+        <section id="volunteer">
+            <div class="sectionContainer">
+                <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
+                <div class="subsectionContainer">
+                    <h1 class="sectionTitle">Help by: Becoming a volunteer</h1>
+                    <p class="sectionDescription">Willing to offer some hands-on assistance? That's amazing! Let us get to know you a little bit and we'll reach out with how you can help.</p>
+                    <button type="button" class="button">Lend a Hand</button>
+                </div>
             </div>
         </section>
         <section id="gallery">
             <div class="sectionContainer">
-                <h1 class="sectionTitle">Method #3: Share our recipes!</h1>
+                <h1 class="sectionTitle">Help by: Sharing our recipes</h1>
                 <p class="sectionDescription">These are some of our favorite things to serve with Firehouse's delicious barbecue. Sharing these recipes creates backlinks to this fundraiser page, which helps more people see and contribute to our goals!</p>
                 <ul id="galleryList">
                     <li>
@@ -310,12 +355,10 @@
                 </ul>
             </div>
         </section>
-        <section id="share">
-            
-            <h1>Extra extra! Tell all about it!</h1>
-        </section>
         <section id="contact">
-            <h1>Call! Text! Email! Get spammed incessantly!</h1>
+            <div class="subsectionContainer">
+                <h1 class="sectionTitle">Contact information goes here.</h1>
+            </div>
         </section>
     </div>
 </body>
