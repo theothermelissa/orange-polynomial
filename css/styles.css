@@ -4,11 +4,13 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    /* background-color: whitesmoke; */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    padding-bottom: 500px;
+    background-color: whitesmoke;
 }
 
 #navbar {
-    background-color: firebrick;
+    background-color: black;
     overflow: hidden;
     width: 100vw;
     height: 50px;
@@ -20,8 +22,10 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    color: white;
 }
 
 nav ul {
@@ -62,7 +66,7 @@ nav a {
     justify-content: center;
     width: 300px;
     height: 50px;
-    background-color: tomato;
+    background-color: firebrick;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -75,7 +79,7 @@ nav a {
     justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: tomato;
+    background-color: firebrick;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -146,7 +150,7 @@ nav a {
 
 #donate .sectionContainer {
     background-color: gainsboro;
-    padding: 80px 0px;
+    height: 100%;/* padding: 80px 0px; */
 }
 
 #donate .button {
@@ -156,7 +160,7 @@ nav a {
 #share .button {
     margin: 40px;
     background-color: white;
-    color: tomato;
+    color: firebrick;
 }
 
 #volunteer .button {
@@ -164,11 +168,12 @@ nav a {
 }
 
 .brightBackground {
-    background-color: tomato;
+    background-color: firebrick;
+    color: white;
 }
 
-.mediumGrayBackground {
-    background-color: gainsboro;
+#contact .sectionContainer {
+    flex-direction: row;
 }
 
 #volunteer .sectionContainer {
@@ -204,8 +209,12 @@ nav a {
 #pickup .sectionContainer {
     /* background-color: gainsboro; */
     flex-direction: row;
-    justify-content: space-around;
-    padding: 80px 0px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 80px; */
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
 }
 
 #pickup img {
@@ -269,6 +278,8 @@ nav a {
 
 #productList {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #productList ul {
@@ -310,8 +321,9 @@ nav a {
 
 .productDescription {
     flex-grow: 1;
-    margin-block-start: 5px;
-    margin-block-end: 5px;
+    /* margin-block-start: 5px; */
+    /* margin-block-end: 5px; */
+    margin: 10px 5px;
 
 }
 

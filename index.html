@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.css" />
     <link rel="stylesheet" href="css/styles.css">
 <script async src="https://cdn.snipcart.com/themes/v3.0.30/default/snipcart.js"></script>
+<script src="https://kit.fontawesome.com/0acac5b482.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
 </head>
 <body>
@@ -23,9 +25,9 @@
                 <li>
                     <a href="#shop">Shop</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#volunteer">Volunteer</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#donate">Donate</a>
                 </li>
@@ -39,23 +41,23 @@
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
+            <i class="fas fa-shopping-cart snipcart-checkout"></i>
         </nav>
-        <a href="#" class="snipcart-checkout">Click here to checkout</a>
     </div>
     <div id="contentContainer">
         <section id="hero">
             <div class="sectionContainer">
                 <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                 <div class="CTAcontainer">
-                    <h1 class="title">6 Ways To Support Orange Polynomial Band</h1>
-                    <a class="button" type="button" href="#shop">FIND OUT HOW</a>
+                    <h1 class="title">With your help, we can purchase our new uniforms!</h1>
+                    <a class="button" type="button" href="#shop">6 WAYS TO HELP</a>
                 </div>
             </div>
         </section>
         <section id="shop">
             <div class=sectionContainer>
-                <h1 class="sectionTitle">Help by: Shopping Our Firehouse Barbecue Fundraiser</h1>
-                <p class="sectionDescription">We've partnered with Firehouse Barbecue to offer these delicious smoked meats, sauces, and Butcher's Crates at a great price. Every purchase contributes directly to Orange Polynomial's goals. </p>
+                <h1 class="sectionTitle">SHOP OUR FUNDRAISER</h1>
+                <!-- <p class="sectionDescription">We've partnered with Firehouse Barbecue to offer these delicious smoked meats, sauces, and Butcher's Crates at a great price. Every purchase contributes directly to Orange Polynomial's goals. </p> -->
                 <div id="productList">
                     <ul>
                         <li class="product">
@@ -90,14 +92,14 @@
                         <li class="product">
                             <img class="productMainImage" src="images/tinifiedTurkeyInTheSmokerFirehouseLocation.jpg" alt="Whole Smoked Turkeys">
                             <h1 class="productName">Whole Turkey</h1>
-                            <p class="productDescription">Succulent smoked whole turkeys. Our turkeys are sourced from the finest local butchers, then slow-smoked to juicy, crisp-skinned perfection. These birds are blast-frozen immediately after smoking to preserve every bit of its delicious flavor.
+                            <p class="productDescription">Succulent smoked whole turkeys. Our turkeys are sourced from the finest local butchers, then slow-smoked to juicy, crisp-skinned perfection.
                             </p>
                             <button class="buyButton snipcart-add-item button"
                             type="button"
                             data-item-id="wholeturkey"
                             data-item-price="74.99"
                             data-item-url="/"
-                            data-item-description="Succulent smoked whole turkeys. Our turkeys are sourced from the finest local butchers, then slow-smoked to juicy, crisp-skinned perfection. These birds are blast-frozen immediately after smoking to preserve every bit of its delicious flavor."
+                            data-item-description="Succulent smoked whole turkeys. Our turkeys are sourced from the finest local butchers, then slow-smoked to juicy, crisp-skinned perfection."
                             data-item-image="images/tinifiedTurkeyInTheSmokerFirehouseLocation.jpg"
                             data-item-name="Whole Turkey"
                             >Add to Cart
@@ -114,7 +116,15 @@
                     <h2 class="sectionDescription">WHERE:</h2>
                     <h3 class="sectionDescription">Orange Polynomial High School Auditorium<br>123 Anywhere St.<br>Polynomial, AL 35962</h3>
                     <h2 class="sectionDescription">WHEN: 2:00 - 4:00 P.M.</h2>
-                    <button type="button" class="button">Add to Calendar</button>
+                    <div title="Add to Calendar" class="addeventatc">
+                        Add to Calendar
+                        <span class="start">03/31/2021 02:00 PM</span>
+                        <span class="end">03/31/2021 04:00 PM</span>
+                        <span class="timezone">America/Chicago</span>
+                        <span class="title">Barbecue Pickup for Orange Polynomail Band's Barbecue Fundraiser</span>
+                        <span class="description">Come get your meat! Thanks for helping Orange Polynomial get their new uniforms! Friendly reminder: items not picked up will be resold, so please be sure to pick up your items in time!</span>
+                        <span class="location">123 Anywhere St., Polynomial, AL</span>
+                    </div>
                 </div>
                 <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
             </div>
@@ -122,30 +132,30 @@
         <section>
             <div class="sideBySide">
                 <div class="subsectionContainer brightBackground" id="share">
-                    <h1 class="sectionTitle">Help by: Sharing far and wide</h1>
+                    <h1 class="sectionTitle">HELP BY: Sharing far and wide</h1>
                     <p class="sectionDescription">Sharing this page helps us meet our goals by reaching people that we can't who might be able to contribute toward our mission. Every share helps!</p>
                     <button class="button" type="button">Share</button>
                 </div>
-                <div class="subsectionContainer mediumGrayBackground" id="donate">
-                    <h1 class="sectionTitle">Help by: Making a donation</h1>
+                <div class="subsectionContainer" id="donate">
+                    <h1 class="sectionTitle">HELP BY: Making a donation</h1>
                     <p class="sectionDescription">Want to contribute without buying any barbecue? Fantastic! 100% of donations go directly to Orange Polynomial Band.</p>
                     <button type="button" class="button">Make a Donation</button>
                 </div>
             </div>
         </section>
-        <section id="volunteer">
+        <!-- <section id="volunteer">
             <div class="sectionContainer">
                 <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                 <div class="subsectionContainer">
-                    <h1 class="sectionTitle">Help by: Becoming a volunteer</h1>
+                    <h1 class="sectionTitle">HELP BY: Becoming a volunteer</h1>
                     <p class="sectionDescription">Willing to offer some hands-on assistance? That's amazing! Let us get to know you a little bit and we'll reach out with how you can help.</p>
                     <button type="button" class="button">Lend a Hand</button>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="gallery">
             <div class="sectionContainer">
-                <h1 class="sectionTitle">Help by: Sharing our recipes</h1>
+                <h1 class="sectionTitle">HELP BY: Sharing our recipes</h1>
                 <p class="sectionDescription">These are some of our favorite things to serve with Firehouse's delicious barbecue. Sharing these recipes creates backlinks to this fundraiser page, which helps more people see and contribute to our goals!</p>
                 <ul id="galleryList">
                     <li>
@@ -350,8 +360,13 @@
             </div>
         </section>
         <section id="contact">
-            <div class="subsectionContainer">
-                <h1 class="sectionTitle">Contact information goes here.</h1>
+            <div class="sectionContainer">
+                <div class="subsectionContainer">
+                    <h1 class="sectionTitle">Need to get in touch?</h1>
+                    <h3 class="sectionDescription">Orange Polynomial High School Band<br>123 Anywhere St.<br>Polynomial, AL 35962</h3>
+                    <a href="mailto: headhoncho@example.com" class="sectionDescription">headhoncho@example.com</a>
+                </div>
+                <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
             </div>
         </section>
     </div>
