@@ -19,13 +19,14 @@ body {
 
 body a {
     text-decoration: none;
+    color: var(--accent);
 }
 
 #navbar {
     background-color: black;
     overflow: hidden;
     width: 100vw;
-    height: 50px;
+    /* height: 80px; */
     position: fixed;
     top: 0;
     margin: 0px;
@@ -44,6 +45,8 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -96,6 +99,8 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-height: 40vh;
     padding: 100px;
 }
 
@@ -120,6 +125,10 @@ nav a {
 
 .title {
     font-size: 2em;
+}
+
+.pageTitle {
+    font-size: 1.5em;
 }
 
 .sectionTitle {
@@ -306,6 +315,12 @@ nav a {
     max-width: 250px;
 }
 
+#contact .subsectionContainer {
+    max-width: 500px;
+    border-right: none;
+    padding-right: 30px;
+}
+
 #productList {
     width: 100%;
     display: flex;
@@ -341,6 +356,11 @@ nav a {
     margin: 10px 5px;
 }
 
+img {
+    object-fit: cover;
+}
+
+
 @media (max-width: 800px) {
     .rowContainer {
       flex-direction: column;
@@ -348,9 +368,25 @@ nav a {
     .rowContainer img {
         width: 100%;
     }
+    #navbar {
+        position: static;
+        padding-bottom: 5px;
+    }
+    nav {
+        flex-direction: column;
+        padding-bottom: 5px;
+        align-items: flex-end;
+    }
+    #contentContainer {
+        margin-top: 0px;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-inline-start: 0;
+        align-items: flex-end;
+    }
+
+    nav i {
+        padding-inline-end: 10px;
+    }
   }
-
-img {
-    object-fit: cover;
-}
-
