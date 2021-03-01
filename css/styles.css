@@ -60,7 +60,7 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: white;
     margin-top: 50px;
 }
@@ -162,6 +162,10 @@ nav a {
     border-right: 5px white solid;
 }
 
+.subsectionContainer:first-child {
+    margin-right: -5px;
+}
+
 .sectionContainerColumn {
     display: flex;
     flex-direction: column;
@@ -238,7 +242,10 @@ nav a {
 #gallery .container {
     flex-direction: column;
     justify-content: center;
-    /* padding-top: 80px; */
+}
+
+#gallery section {
+    display: flex;
 }
 
 #gallery .button {
@@ -254,8 +261,6 @@ nav a {
     /* flex-wrap: nowrap; */
     /* overflow-x: auto; */
     list-style-type: none;
-    width: 100vw;
-    padding: 5px 10px;
     background-color: var(--lightest-gray);
 }
 
@@ -265,6 +270,7 @@ nav a {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style-type: none;
+    margin: 0;
 }
 
 #gallery .tile {
@@ -313,6 +319,7 @@ nav a {
 
 #contact img {
     max-width: 250px;
+    /* margin-right: 0; */
 }
 
 #contact .subsectionContainer {
