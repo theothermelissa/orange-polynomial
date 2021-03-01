@@ -46,22 +46,23 @@
     </div>
     <div id="contentContainer">
         <section id="hero">
-            <div class="sectionContainer">
-                <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
-                <div class="CTAcontainer">
+            <div class="container">
+                <!-- <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu"> -->
+                <div class="brightBackground"></div>
+                <div class="hero">
                     <h1 class="title">With your help, we can purchase our new uniforms!</h1>
                     <a class="button" type="button" href="#shop">6 WAYS TO HELP</a>
                 </div>
             </div>
         </section>
         <section id="shop">
-            <div class=sectionContainer>
-                <h1 class="sectionTitle">SHOP OUR FUNDRAISER</h1>
+            <div class=sectionContainerColumn>
+                <h1 class="sectionTitle">#1: SHOP OUR FUNDRAISER</h1>
                 <!-- <p class="sectionDescription">We've partnered with Firehouse Barbecue to offer these delicious smoked meats, sauces, and Butcher's Crates at a great price. Every purchase contributes directly to Orange Polynomial's goals. </p> -->
                 <div id="productList">
                     <ul>
-                        <li class="product">
-                            <img class="productMainImage" src="images/tinifiedButtsInTheSmoker.jpg" alt="Boston Butts in the Smoker">
+                        <li class="tile">
+                            <img class="tileImage" src="images/tinifiedButtsInTheSmoker.jpg" alt="Boston Butts in the Smoker">
                             <h1 class="productName">Boston Butt</h1>
                             <p class="productDescription">Delicious Boston Butts smoked to perfection. Our Boston Butts are premium quality, locally sourced, and slowly hickory smoked over 16 hours until they reach exquisite fork-tenderness. </p>
                             <button class="buyButton snipcart-add-item button"
@@ -74,8 +75,8 @@
                                 >Add to Cart
                             </button>
                         </li>
-                        <li class="product">
-                            <img class="productMainImage" src="images/tinifiedSmokedHamStockPhotoIsolatedWhiteBackground.jpg" alt="Smoked Half Ham">
+                        <li class="tile">
+                            <img class="tileImage" src="images/tinifiedSmokedHamStockPhotoIsolatedWhiteBackground.jpg" alt="Smoked Half Ham">
                             <h1 class="productName">Half Ham</h1>
                             <p class="productDescription">Our Half Hams are locally sourced and the finest quality available. They are twice-smoked, yielding an incredibly tender texture and delicious flavor you'll only get from Firehouse.</p>
                             <button class="buyButton snipcart-add-item button"
@@ -89,8 +90,8 @@
                                 >Add to Cart
                             </button>
                         </li>
-                        <li class="product">
-                            <img class="productMainImage" src="images/tinifiedTurkeyInTheSmokerFirehouseLocation.jpg" alt="Whole Smoked Turkeys">
+                        <li class="tile">
+                            <img class="tileImage" src="images/tinifiedTurkeyInTheSmokerFirehouseLocation.jpg" alt="Whole Smoked Turkeys">
                             <h1 class="productName">Whole Turkey</h1>
                             <p class="productDescription">Succulent smoked whole turkeys. Our turkeys are sourced from the finest local butchers, then slow-smoked to juicy, crisp-skinned perfection.
                             </p>
@@ -110,8 +111,9 @@
             </div>
         </section>
         <section id="pickup">
-            <div class="sectionContainer">
-                <div class="subsectionContainer">
+            <div class="container">
+                <img src="images/dontmissoutmegaphone.jpg" alt="Don't Miss Out">
+                <div class="subsectionContainerColumn">
                     <h1 class="sectionTitle">IMPORTANT: Don't miss the pickup date!</h1>
                     <h2 class="sectionDescription">WHERE:</h2>
                     <h3 class="sectionDescription">Orange Polynomial High School Auditorium<br>123 Anywhere St.<br>Polynomial, AL 35962</h3>
@@ -126,12 +128,11 @@
                         <span class="location">123 Anywhere St., Polynomial, AL</span>
                     </div>
                 </div>
-                <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
             </div>
         </section>
         <section>
             <div class="sideBySide">
-                <div class="subsectionContainer brightBackground" id="share">
+                <div class="subsectionContainer" id="share">
                     <h1 class="sectionTitle">HELP BY: Sharing far and wide</h1>
                     <p class="sectionDescription">Sharing this page helps us meet our goals by reaching people that we can't who might be able to contribute toward our mission. Every share helps!</p>
                     <button class="button" type="button">Share</button>
@@ -143,23 +144,13 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="volunteer">
-            <div class="sectionContainer">
-                <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
-                <div class="subsectionContainer">
-                    <h1 class="sectionTitle">HELP BY: Becoming a volunteer</h1>
-                    <p class="sectionDescription">Willing to offer some hands-on assistance? That's amazing! Let us get to know you a little bit and we'll reach out with how you can help.</p>
-                    <button type="button" class="button">Lend a Hand</button>
-                </div>
-            </div>
-        </section> -->
         <section id="gallery">
-            <div class="sectionContainer">
+            <div class="container">
                 <h1 class="sectionTitle">HELP BY: Sharing our recipes</h1>
                 <p class="sectionDescription">These are some of our favorite things to serve with Firehouse's delicious barbecue. Sharing these recipes creates backlinks to this fundraiser page, which helps more people see and contribute to our goals!</p>
                 <ul id="galleryList">
                     <li>
-                        <div class="entry">
+                        <div class="tile">
                             <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                             <div class="entryDescription">
                                 <h3>Coleslaw</h3>
@@ -192,7 +183,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="entry">
+                        <div class="tile">
                             <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                             <div class="entryDescription">
                                 <h3>Coleslaw</h3>
@@ -225,7 +216,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="entry">
+                        <div class="tile">
                             <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                             <div class="entryDescription">
                                 <h3>Coleslaw</h3>
@@ -258,7 +249,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="entry">
+                        <div class="tile">
                             <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                             <div class="entryDescription">
                                 <h3>Coleslaw</h3>
@@ -291,7 +282,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="entry">
+                        <div class="tile">
                             <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                             <div class="entryDescription">
                                 <h3>Coleslaw</h3>
@@ -324,7 +315,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="entry">
+                        <div class="tile">
                             <img src="images/shockedpikachu.jpg" alt="Shocked Pikachu">
                             <div class="entryDescription">
                                 <h3>Coleslaw</h3>
@@ -360,7 +351,7 @@
             </div>
         </section>
         <section id="contact">
-            <div class="sectionContainer">
+            <div class="container">
                 <div class="subsectionContainer">
                     <h1 class="sectionTitle">Need to get in touch?</h1>
                     <h3 class="sectionDescription">Orange Polynomial High School Band<br>123 Anywhere St.<br>Polynomial, AL 35962</h3>
